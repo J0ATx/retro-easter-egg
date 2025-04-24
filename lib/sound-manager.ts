@@ -5,7 +5,7 @@
  */
 
 // Tipos de sonidos disponibles en la aplicación
-export type SoundType = "boot" | "success" | "error" | "type" | "redeem" | "achievement" | "click" | "tab"
+export type SoundType = "boot" | "success" | "error" | "type" | "redeem" | "achievement" | "click" | "tab" | "startup"
 
 // Mapa de rutas de archivos de sonido
 const SOUND_PATHS: Record<SoundType, string> = {
@@ -17,6 +17,7 @@ const SOUND_PATHS: Record<SoundType, string> = {
   achievement: "/sounds/achievement.mp3",
   click: "/sounds/click.mp3",
   tab: "/sounds/tab.mp3",
+  startup: "/sounds/startup.mp3",
 }
 
 // Caché de instancias de Audio para mejorar el rendimiento
